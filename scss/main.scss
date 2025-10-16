@@ -1,0 +1,174 @@
+@import "variables";
+@import "header";
+@mixin flexRowCenter{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.cabecera {
+	img {
+		display: flex;
+		width: 100%;
+	}
+}
+body {
+	background-color: $background-color_2;
+    margin: 0;
+}
+h1 {
+	color: $color_1;
+	text-align: center;
+	font-family: $font-family_1;
+	font-size: 40px;
+	margin: 10px;
+}
+article {
+	img {
+		width: 30%;
+		border: solid 4px;
+		display: flex;
+		justify-content: center;
+	}
+	h2 {
+		text-align: center;
+		margin: 5px;
+	}
+}
+.menu {
+	div {
+		display: flex;
+		justify-content: center;
+        margin: 10px;
+	}
+}
+.card {
+	display: flex;
+    flex-direction: row;
+    margin: 40px;
+    justify-content: space-around;
+    justify-items: center;
+}
+.btn-primary {
+	background-color: $background-color_3;
+	border: #6C8C74;
+	--bs-btn-disabled-color: #0D0D0D;
+	--bs-btn-disabled-border-color: #6C8C74;
+	--bs-btn-hover-bg: #0D0D0D;
+	--bs-btn-disabled-bg: #0d0d0d;
+}
+p {
+	color: $color_1;
+	font-size: 20px;
+	display: flex;
+	flex-direction: row;
+	padding: 3px;
+}
+.ubicacion {
+	color: $color_1;
+	text-transform: capitalize;
+	font-size: 25px;
+	font-style: italic;
+}
+.contenedor {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 20px;
+	padding: 20px;
+}
+.ubiHorarios {
+	@include flexRowCenter;
+	justify-content: left;
+	margin: 5px;
+	iframe {
+		display: flex;
+		flex-direction: row;
+		justify-content: flex-start;
+		margin: 40px;
+	}
+}
+.ubiDatos {
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	margin: 5px;
+}
+footer {
+	background-color: $background-color_1;
+	img {
+		display: flex;
+		flex-direction: row;
+		justify-content: left;
+		width: 5%;
+	}
+}
+.redes {
+	@include flexRowCenter;
+	justify-content: left;
+	margin: 0;
+	color: $color_1;
+	text-decoration: none;
+	padding: 5px;
+}
+.iconos {
+	@include flexRowCenter;
+	justify-content: space-evenly;
+	width: auto;
+	margin: auto;
+}
+@media (max-width:425px) {
+	header {
+		img {
+			width: 40%;
+		}
+	}
+	nav {
+		ul {
+			flex-direction: column;
+		}
+	}
+	.menu {
+		h1 {
+			text-align: center;
+		}
+		h2 {
+			text-align: center;
+			color: $color_3;
+		}
+		img {
+			width: 70%;
+		}
+	}
+	.card {
+		display: flex;
+		flex-direction: column;
+		background-color: $background-color_2;
+		margin: auto;
+	}
+	.contenedor {
+		flex-direction: column;
+	}
+	.ubiHorarios {
+		iframe {
+			flex-direction: column;
+		}
+	}
+	.ubiDatos {
+		flex-direction: column;
+		align-items: last baseline;
+	}
+	footer {
+		img {
+			width: 15%;
+		}
+	}
+	.redes {
+		flex-direction: row;
+		text-align: center;
+		font-size: small;
+	}
+	.iconos {
+		flex-direction: column;
+	}
+}

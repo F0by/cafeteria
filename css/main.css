@@ -1,0 +1,204 @@
+header {
+  background-color: #0D0D0D;
+  padding: 5px;
+}
+header img {
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  width: 5%;
+  padding: 5px;
+}
+
+.cabeza {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: auto;
+}
+nav a {
+  color: #6C8C74;
+  text-decoration: none;
+  padding: 5px;
+}
+
+.cabecera img {
+  display: flex;
+  width: 100%;
+}
+
+body {
+  background-color: #404040;
+  margin: 0;
+}
+
+h1 {
+  color: #F2F2F2;
+  text-align: center;
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 40px;
+  margin: 10px;
+}
+
+article img {
+  width: 30%;
+  border: solid 4px;
+  display: flex;
+  justify-content: center;
+}
+article h2 {
+  text-align: center;
+  margin: 5px;
+}
+
+.menu div {
+  display: flex;
+  justify-content: center;
+  margin: 10px;
+}
+
+.card {
+  display: flex;
+  flex-direction: row;
+  margin: 40px;
+  justify-content: space-around;
+  justify-items: center;
+}
+
+.btn-primary {
+  background-color: #6C8C74;
+  border: #6C8C74;
+  --bs-btn-disabled-color: #0D0D0D;
+  --bs-btn-disabled-border-color: #6C8C74;
+  --bs-btn-hover-bg: #0D0D0D;
+  --bs-btn-disabled-bg: #0d0d0d;
+}
+
+p {
+  color: #F2F2F2;
+  font-size: 20px;
+  display: flex;
+  flex-direction: row;
+  padding: 3px;
+}
+
+.ubicacion {
+  color: #F2F2F2;
+  text-transform: capitalize;
+  font-size: 25px;
+  font-style: italic;
+}
+
+.contenedor {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+}
+
+.ubiHorarios {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: left;
+  margin: 5px;
+}
+.ubiHorarios iframe {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  margin: 40px;
+}
+
+.ubiDatos {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin: 5px;
+}
+
+footer {
+  background-color: #0D0D0D;
+}
+footer img {
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  width: 5%;
+}
+
+.redes {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: left;
+  margin: 0;
+  color: #F2F2F2;
+  text-decoration: none;
+  padding: 5px;
+}
+
+.iconos {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  width: auto;
+  margin: auto;
+}
+
+@media (max-width: 425px) {
+  header img {
+    width: 40%;
+  }
+  nav ul {
+    flex-direction: column;
+  }
+  .menu h1 {
+    text-align: center;
+  }
+  .menu h2 {
+    text-align: center;
+    color: #0D0D0D;
+  }
+  .menu img {
+    width: 70%;
+  }
+  .card {
+    display: flex;
+    flex-direction: column;
+    background-color: #404040;
+    margin: auto;
+  }
+  .contenedor {
+    flex-direction: column;
+  }
+  .ubiHorarios iframe {
+    flex-direction: column;
+  }
+  .ubiDatos {
+    flex-direction: column;
+    align-items: last baseline;
+  }
+  footer img {
+    width: 15%;
+  }
+  .redes {
+    flex-direction: row;
+    text-align: center;
+    font-size: small;
+  }
+  .iconos {
+    flex-direction: column;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */
