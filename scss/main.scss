@@ -14,6 +14,7 @@
 }
 body {
 	background-color: $background-color_2;
+    background: linear-gradient(180deg,rgba(64, 64, 64, 1) 41%, rgba(13, 13, 13, 1) 83%);
     margin: 0;
 }
 h1 {
@@ -33,6 +34,7 @@ article {
 	h2 {
 		text-align: center;
 		margin: 5px;
+        color: $color_1;
 	}
 }
 .menu {
@@ -102,7 +104,18 @@ footer {
 		justify-content: left;
 		width: 5%;
 	}
+    a {
+		color: $color_2;
+		text-decoration: none;
+		padding: 5px;
+        transition: color 1s;
+	}
+    a:hover{
+        color: $color_1;
+        font-size: 1rem;
+    }
 }
+
 .redes {
 	@include flexRowCenter;
 	justify-content: left;
