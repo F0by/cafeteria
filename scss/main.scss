@@ -1,5 +1,7 @@
 @import "variables";
 @import "header";
+@import "body";
+@import "footer";
 @mixin flexRowCenter{
     display: flex;
     flex-direction: row;
@@ -11,11 +13,6 @@
 		display: flex;
 		width: 100%;
 	}
-}
-body {
-	background-color: $background-color_2;
-    background: linear-gradient(180deg,rgba(64, 64, 64, 1) 41%, rgba(13, 13, 13, 1) 83%);
-    margin: 0;
 }
 h1 {
 	color: $color_1;
@@ -97,40 +94,7 @@ p {
 	text-align: center;
 	margin: 5px;
 }
-footer {
-	background-color: $background-color_1;
-	img {
-		display: flex;
-		flex-direction: row;
-		justify-content: left;
-		width: 5%;
-	}
-    a {
-		color: $color_2;
-		text-decoration: none;
-		padding: 5px;
-        transition: color 1s;
-	}
-    a:hover{
-        color: $color_1;
-        font-size: 1.5rem;
-    }
-}
 
-.redes {
-	@include flexRowCenter;
-	justify-content: left;
-	margin: 0;
-	color: $color_1;
-	text-decoration: none;
-	padding: 5px;
-}
-.iconos {
-	@include flexRowCenter;
-	justify-content: space-evenly;
-	width: auto;
-	margin: auto;
-}
 @media (max-width:425px) {
 	header {
 		img {
